@@ -20,4 +20,6 @@ make
 
 # Installation
 
-There will be a debug as well as a regular build for most purposes you will want to use `dpkg` to install the non-debug version on proxmox.
+There will be a debug as well as a regular build.
+
+You will want to use `dpkg` to install the non-debug version on proxmox unless you are debugging or developing.
