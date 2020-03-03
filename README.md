@@ -17,8 +17,12 @@ Since this is done with docker you need not worry about any other dependancies o
 
 # Build DEB Packages
 ```bash
+git clone https://github.com/lillypad/pve-qemu-unlocked.git
+cd pve-qemu-unlocked/
 make
 ```
+
+__NOTE:__ If you do not specify `-j#` in the `Dockerfile` the build will take up more than 32GB of RAM. If you want faster builds and you have more RAM, you can modify this to your specific needs.
 
 `DEB` fills will be stored in `bin/`
 
