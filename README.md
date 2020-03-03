@@ -2,7 +2,7 @@
 
 Proxmox does not support anything other than `x86`/`x86_x64` even though `qemu` which is in it's backend supports to emulate MANY other CPU architectures.
 
-Since I felt this is a disservice to proxmox and qemu as great technologies, I've decided to start fixing it.
+Since I felt this is a disservice to `proxmox` and `qemu` as great technologies, I've decided to start fixing it.
 
 This `Dockerfile` and `make` script will build your own version of `pve-qemu` and remove the `--target-list` configure options enabling all supported CPUs and emulations for the proxmox `pve-qemu` DEB package.
 
@@ -10,7 +10,7 @@ Since this is done with docker you need not worry about any other dependancies o
 
 # Features to Come
 - Setup Travis CI to serve builds to everyone without having to compile their own
-- Modifications to the UI to allow all other CPUs
+- Modifications to the UI to allow all other CPUs supported by `qemu`
 
 # Dependancies
 - Docker
