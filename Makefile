@@ -4,9 +4,9 @@
 PWD := $(shell pwd)
 USER := $(shell whoami)
 
-package: package-0 package-1
-
 all: build package
+
+package: package-0 package-1
 
 build:
 	docker build -t pve-qemu-unlocked .
