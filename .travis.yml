@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+stages:
+  - debian
+
+jobs:
+  include:
+    - stage: debian
+      language: c
+      script: make
