@@ -5,6 +5,7 @@ RUN mkdir -p /opt/
 WORKDIR /opt/
 RUN git clone git://git.proxmox.com/git/pve-qemu
 WORKDIR /opt/pve-qemu/
+RUN git checkout 284d3b2cabef10362a574efe209d1d406f351dfa
 RUN apt-get install -y make \
     wget \
     curl \
